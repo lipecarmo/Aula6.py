@@ -110,17 +110,17 @@
 # todos os números pares de 1 a 100 e exiba o resultado.
 
 # # Passo 1: Inicializar variáveis
-# soma = 0  # Variável para armazenar a soma dos números pares
-# numero = 1  # Começar a contagem a partir de 1
+soma = 0  # Variável para armazenar a soma dos números pares
+numero = 1  # Começar a contagem a partir de 1
 
 # # Passo 2: Usar um laço while para iterar de 1 a 100
-# while numero <= 100:
-#     if numero % 2 == 0:  # Verifica se o número é par
-#         soma += numero  # Adiciona o número par à soma
-#     numero += 1  # Incrementa o número
+while numero <= 100:
+    if numero % 2 == 0:  # Verifica se o número é par
+        soma += numero  # Adiciona o número par à soma
+    numero += 1  # Incrementa o número
 
 # # Passo 3: Exibir o resultado
-# print(f"A soma dos números pares de 1 a 100 é: {soma}.")
+print(f"A soma dos números pares de 1 a 100 é: {soma}.")
 
 
 # Verificação de Palíndromo:
@@ -129,25 +129,25 @@
 # (lê-se da mesma forma de trás para frente).
 
 # Passo 1: Solicitar uma palavra ao usuário
-# palavra = input("Digite uma palavra: ").strip()
+palavra = input("Digite uma palavra: ").strip()
 
 # # Passo 2: Inicializar variáveis
-# inicio = 0  # Índice do início da palavra
-# fim = len(palavra) - 1  # Índice do final da palavra
+inicio = 0  # Índice do início da palavra
+fim = len(palavra) - 1  # Índice do final da palavra
 
 # # Passo 3: Usar um laço while para verificar se a palavra é um palíndromo
-# eh_palindromo = True  # Assume que a palavra é um palíndromo
+eh_palindromo = True  # Assume que a palavra é um palíndromo
 
 # while inicio < fim:
-#     if palavra[inicio].lower() != palavra[fim].lower():  # Verifica os caracteres
-#         eh_palindromo = False  # Se não forem iguais, não é palíndromo
-#         break  # Sai do laço se não for palíndromo
-#     inicio += 1  # Move o índice do início para a direita
-#     fim -= 1  # Move o índice do fim para a esquerda
+    if palavra[inicio].lower() != palavra[fim].lower():  # Verifica os caracteres
+        eh_palindromo = False  # Se não forem iguais, não é palíndromo
+        break  # Sai do laço se não for palíndromo
+    inicio += 1  # Move o índice do início para a direita
+    fim -= 1  # Move o índice do fim para a esquerda
 
 # # Passo 4: Exibir o resultado
-# if eh_palindromo:
-#     print(f"A palavra '{palavra}' é um palíndromo.")
-# else:
-#     print(f"A palavra '{palavra}' não é um palíndromo.")
+if eh_palindromo:
+    print(f"A palavra '{palavra}' é um palíndromo.")
+else:
+    print(f"A palavra '{palavra}' não é um palíndromo.")
 
